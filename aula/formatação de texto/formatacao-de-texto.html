@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <title>Bootstrap - Formatações de texto</title>
+</head>
+<body>
+
+    <!--Cabeçalho-->
+    <h1>Cabeçalho</h1>
+    <h2>Cabeçalho</h2>
+    <h3>Cabeçalho</h3>
+    <h4>Cabeçalho</h4>
+    <h5>Cabeçalho</h5>
+    <h6>Cabeçalho</h6>
+
+    <!--Podemos também mudar as formatações-->
+    <h1>Cabeçalho</h1>
+    <h2>Cabeçalho</h2>
+    <h3>Cabeçalho</h3>
+    <h4>Cabeçalho</h4>
+    <h5 class="h1">Cabeçalho</h5>   <!--Nesse exemplo a propriedade h5 herdou as propriedades do h1-->
+    <h6>Cabeçalho</h6>
+
+    <!--Display - Dá um destaque maior aos cabeçalhos h1 - h4 -->
+    <h1 class="display-1">Display 1</h1>
+    <h2 class="display-2">Display 2</h2>
+    <h3 class="display-3">Display 3</h3>
+    <h4 class="display-4">Display 4</h4>
+
+    <br>
+    <br>
+
+    <!--Parágrafos-->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eos est delectus non reprehenderit iure voluptatem perspiciatis esse. Soluta, iste! Vitae quos ad deleniti sapiente recusandae consectetur vel molestias nemo?</p>
+
+    <!--Lead - Dá um destaque maior ao parágrafo-->
+    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita accusantium quasi incidunt excepturi qui nostrum, delectus facere laudantium repudiandae? Labore sint, facere corporis accusamus amet officia repellat ut id aut.</p>
+
+    <!--Monospace - Deixa todas as letras com o mesmo espaçamento(largura)-->
+    <p class="text-monospace">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ratione sit voluptates quia quasi doloribus, placeat ducimus praesentium temporibus eos sunt! Dignissimos perspiciatis ut ullam nemo culpa rerum nobis tempora?</p>
+    
+    <br>
+    <br>
+
+    <!--Classes de estilo-->
+    <p class="font-weight-normal">Texto Normal</p>
+    <p class="font-weight-bold">Texto Negrito</p>
+    <p class="font-italic">Texto Itálico</p>
+    <p class="font-weight-light">Texto Leve (Fino)</p>
+    
+    <br>
+    <br>
+
+    <!--Transformações de texto-->
+    <p class="text-uppercase">Deixa todas as letras maiúscula</p>
+    <p class="text-lowercase">Deixa todas as LETRAS Minúscula</p>
+    <p class="text-capitalize"> deixa todas as primeiras letras do texto maiúscula</p>
+
+    <br>
+    <br>
+
+    <!--Alinhamentos-->
+    <p class="text-right">Direita</p>
+    <p class="text-left">Esquerda</p>
+    <p class="text-center">Centro</p>
+    
+    <br>
+    <br>
+
+    <!--Bloco de citação-->
+    <blockquote class="blockquote">
+        <p>Esse é um bloco de citação!</p>
+    </blockquote>
+     <!--Podemos também combinar classes-->
+     <blockquote class="blockquote text-right">
+        <p>Esse é um bloco de citação!</p>
+    </blockquote>
+
+    <!--Bloco de citação com rodapé-->
+    <blockquote>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut unde reiciendis distinctio aliquam magni, fuga incidunt quas vel accusantium temporibus aut quis, ea, nam quam esse pariatur minima culpa!</p>
+        <footer>Por
+            <cite>Pedro Lucas Garcia</cite>
+        </footer>
+    </blockquote>
+
+    <!--Aplicando classes no bloco de citação com rodapé-->
+    <blockquote class="blockquote text-right">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut unde reiciendis distinctio aliquam magni, fuga incidunt quas vel accusantium temporibus aut quis, ea, nam quam esse pariatur minima culpa!</p>
+        <foote class="blockquote-footer font-italic">Por
+            <cite>Pedro Lucas Garcia</cite>
+        </footer>
+    </blockquote>
+    
+    <br>
+    <br>
+
+    <!--Truncate - Corta o texto e aparece "..."(reticências) indicando que tem continuidade-->
+    <p class="text-truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi sapiente eaque nulla, doloribus nisi aspernatur excepturi ex distinctio tempore debitis itaque placeat. Vero officiis non veniam praesentium! Odit, minus provident.</p>
+    
+    <br>
+    <br>
+
+    <!--Listas sem estilo-->
+    <ul class="list-unstyled">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    
+    <!--Listas inline - Deixa o item um a frente do outro-->
+    <ul class="list-inline">
+        <li class="list-inline-item">Item 1</li>
+        <li class="list-inline-item">Item 2</li>
+        <li class="list-inline-item">Item 3</li>
+    </ul>
+
+</body> 
+</html>
