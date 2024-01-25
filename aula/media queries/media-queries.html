@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <title>Bootstrap - Media Queries (breakpoints)</title>
+
+    <style type="text/css">
+        
+        /* UTILIZANDO MIN-WIDTH - LARGURA MÍNIMA*/
+
+        /*Small devices (landscape phones, 576px e superior)*/
+        @media (min-width: 576px) {
+            body {
+                background-color: red;
+            }
+        }
+
+        /*Medium devices (tablets, 768px e superior)*/
+        @media (min-width: 768px) {
+            body {
+                background-color: yellow;
+            }
+        }
+
+        /*Large devices (desktops, 992px e superior)*/
+        @media (min-width: 992px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        /*Extra large devices (large desktops, 1200px e superior)*/
+        @media (min-width: 1200px) {
+            body {
+                background-color: blue;
+            }
+        }
+
+
+        /* UTILIZANDO MAX-WIDTH - LARGURA MÁXIMA*/
+
+        /* Extra small devices (portraint phones, menos de 576px) */
+        @media (max-width: 575.98px) {
+            body {
+                background-color: orange;
+            }
+        }
+
+        /* Small devices (Landscape Phones, menos de 768px) */
+        @media (max-width: 767.98px) {
+            body {
+                background-color: violet;
+            }
+        }
+
+        /* Medium devices (Tablets menos de 992px) */
+        @media (max-width: 991.98px) {
+            body {
+                background-color: maroon;
+            }
+        }
+
+        /* Large devices (Desktops menos de 1200px) */
+        @media (max-width: 1199.98px) {
+            body {
+                background-color: coral;
+            }
+        }
+
+
+        /* UTILIZANDO MIN-WIDTH E MAX-WIDTH */
+
+        /*Extra small devices (portrait phones, menor que 576px)*/
+        @media (max-width: 575.98px) {
+            body {
+                background-color: cadetblue;
+            }
+        }
+
+        /*Small devices (landscape phones, de 576px até 767.98px)*/
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            body {
+                background-color: cornflowerblue;
+            }
+        }
+
+        /*Medium devices (tablets, de 768px até 991.98px)*/
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            body {
+                background-color: slategray;
+            }
+        }
+
+        /*Large devices (desktops, de 992px até 1199.98px)*/
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            body {
+                background-color: rosybrown;
+            }
+        }
+
+        /*Extra large devices (large desktops, 1200px  e maiores)*/
+        @media (min-width: 1200px) {
+            body {
+                background-color: black;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+</body>
+</html>
