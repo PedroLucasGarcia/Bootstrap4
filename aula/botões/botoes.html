@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    
+    <title>Bootstrap - botões</title>
+
+  </head>
+
+  <body style="padding-bottom: 200px; width: 600px; margin: 0 auto;">
+
+    <!-- Botões 
+    formatação padrao: btn
+    formatação específicas:
+    btn-primary, btn-secondary, btn-success, btn-info,
+    btn-warning, btn-danger, btn-light, btn-dark, btn-link
+    -->
+    <h3>Botões</h3>
+    <button class="btn" type="button">Botão padrão</button>
+    <button class="btn btn-primary" type="button">Botão primary</button>
+    <button class="btn btn-secondary" type="button">Botão secondary</button>
+    <button class="btn btn-success" type="button">Botão success</button>
+    <button class="btn btn-info" type="button">Botão info</button>
+    <button class="btn btn-warning" type="button">Botão warning</button>
+    <button class="btn btn-danger" type="button">Botão danger</button>
+    <button class="btn btn-light" type="button">Botão light</button>
+    <button class="btn btn-dark" type="button">Botão dark</button>
+    <button class="btn btn-link" type="button">Botão link</button>
+
+    <br><br>
+
+    <h3>Botões com diferentes tags</h3>
+    <a class="btn btn-primary" href="#">Link</a>
+    <button class="btn btn-danger" type="submit">Submit</button>
+    <input class="btn btn-secondary" type="button" value="Button">
+    <input class="btn btn-success" type="submit" value="Input Submit">
+    <input class="btn btn-warning" type="reset" value="Reset">
+
+    <br><br>
+
+    <!-- Botões com contorno
+    btn-outline-<formato>
+    -->
+    <h3>Botões com contorno</h3>
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <button type="button" class="btn btn-outline-light text-dark">Light</button>
+
+    <br><br>
+
+    <!-- Tamanhos de botões
+    opções: btn-lg, btn-sm, btn-block
+    -->
+    <h3>Tamanhos dos botões</h3>
+    <button class="btn btn-dark btn-lg" type="button">Grande</button>
+    <button class="btn btn-dark" type="button">Normal</button>
+    <button class="btn btn-dark btn-sm" type="button">Pequeno</button>
+    <br><br>
+    <button class="btn btn-dark btn-block" type="button">Bloco</button>
+
+    <br><br>
+
+    <!-- Estados dos botões
+    opções: active, disabled
+    -->
+    <h3>Estados de botões</h3>
+    <button class="btn btn-success" type="button">Normal</button>
+    <button class="btn btn-success active" type="button">Ativo</button>
+    <button class="btn btn-success disabled" type="button">Inativo</button>
+    <br><br>
+    <button class="btn btn-success" type="button" data-toggle="button">Alternar</button>    <!-- data-toggle - Alterna o estado do botão -->
+
+    <br><br>
+
+    <h3>Grupos de botões - horizontal</h3>
+    <div class="btn-group">     <!-- btn-group - Cria um grupo de botões na horizontal-->
+        <button class="btn btn-info" type="button">Esquerda</button>
+        <button class="btn btn-info" type="button">Centro</button>
+        <button class="btn btn-info" type="button">Direita</button>
+    </div>
+
+    <br><br>
+
+    <h3>Grupos de botões - vertical</h3>
+    <div class="btn-group-vertical">    <!-- btn-group - Cria um grupo de botões na vertical-->
+        <button class="btn btn-danger" type="button">Topo</button>
+        <button class="btn btn-danger" type="button">Meio</button>
+        <button class="btn btn-danger" type="button">Fundo</button>
+    </div>
+
+    <br><br>
+
+    <h3>Toolbar de botões</h3>
+    <div class="btn-toolbar">   <!--btn-toolbar - Agrupa os grupos e coloca um ao lado do outro -->
+        <div class="btn-group">
+           <button class="btn btn-warning" type="button">1</button>
+           <button class="btn btn-warning" type="button">2</button>
+           <button class="btn btn-warning" type="button">3</button>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-warning" type="button">4</button>
+            <button class="btn btn-warning" type="button">5</button>
+        </div>
+    </div>
+
+      <br><br>
+
+    <h3>Botões dropdown</h3>
+    <div class="dropdown">  <!-- dropdown - Ao clicar no botão aparecerá um menu de opções -->
+        <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" type="button">   <!-- dropdown-toggle - Aparecerá uma seta para indicar um dropdow | data-toggle - Cria o menu dropdown -->
+            Clique
+        </button>
+        <div class="dropdown-menu">     <!-- dropdown-menu - Faz a associação com o botão -->
+            <a href="#" class="dropdown-item">Link 1</a>    <!--dropdown-item - Informa que esse é um item do menu -->
+            <div class="dropdown-divider"></div>     <!-- dropdown-divider - Cria uma divisão-->
+            <a href="#" class="dropdown-item">Link 2</a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">Link 3</a>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--src= Link do CDN do jquery, integrity= É um recurso de segurança que permite aos navegadores verificar se os recursos que buscam são entregues sem manipulação inesperada. Ele é usado quando utilizamos um CDN. | crossorigin= Nenhuma credencial é enviada ao site de origem que hospeda o conteúdo. Ele é usado quando utilizamos um CDN.-->
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!--src= Link do CDN do popper.js, integrity= É um recurso de segurança que permite aos navegadores verificar se os recursos que buscam são entregues sem manipulação inesperada. Ele é usado quando utilizamos um CDN. | crossorigin="anonymous" Nenhuma credencial é enviada ao site de origem que hospeda o conteúdo. Ele é usado quando utilizamos um CDN.-->
+
+    <!-- Bootstrap JS -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+  </body>
+</html>
