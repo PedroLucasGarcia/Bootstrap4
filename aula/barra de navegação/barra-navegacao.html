@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    
+    <title>Bootstrap - Barra de Navegação</title>
+</head>
+
+<body>
+
+    <!-- Navegação
+    Tipos de navegação:
+        nav-pills - Aplica um arredondamento nos itens ativos
+        nav-tabs - Navegacão por abas, também aplica um efeito nos itens ativos
+    opções de alinhamento: 
+        justify-content-center - Alinha no centro
+        justify-content-end - Alinha na direita
+        flex-column - Alinha em colunas (Navegação vertical)
+    -->
+    <h2>Navegação simples</h2>
+    <ul class="nav nav-pills justify-content-end">    <!-- nav - Estrutura de navegação -->
+        <li class="nav-item">   <!-- nav-item - Define um item de navegação -->
+            <a href="" class="nav-link active">Home</a>    <!-- nav-link - Define um link de navegação -->
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Serviços</a>
+        </li>
+    </ul>
+    
+    <h2>Navegação com abas</h2>
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+            <a href="" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Serviços</a>
+        </li>
+    </ul>
+
+    <h2>Navegação vertical</h2>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a href="" class="nav-link ">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Serviços</a>
+        </li>
+    </ul>
+
+    <h2>Barra de navegação simples</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">    <!-- navbar - Estrutura de barra de navegação | navbar-expand-sm - Especifica o tipo de dispositivo | navbar-dark - Define a cor da navbar -->
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Chalé Hotel</a>    <!-- navbar-brand - Define o logo da navbar -->
+
+        <!-- Navegação -->
+        <ul class="navbar-nav ml-auto">     <!-- navbar-nav - Navegação da Navbar -->
+            <li class="nav-item">   <!-- nav-item - Define um item de navegação -->
+                <a href="" class="nav-link">Home</a>    <!-- nav-link - Define um link de navegação -->
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Serviços</a>
+            </li>
+        </ul>
+    </nav>
+    
+
+    <h2>Barra de navegação com menu responsivo</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Chalé Hotel</a>  
+        
+        <!-- Menu Hamburguer-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">    <!-- navbar-toggler - Menu hamburguer | data-toggle="collapse" - Identifica que ao botão ser precionado ele abrirá a navegação | data-target="#nav-target" - Define o que abrir (nesse caso abrirá o elemento(item) com o id="nav-target") -->
+            <span class="navbar-toggler-icon"></span>   <!-- Icone do menu hamburguer -->
+        </button>
+
+        <!-- Navegação -->
+        <div class="collapse navbar-collapse" id="nav-target">  <!-- collapse - Esconde(oculta/recolhe) o conteúdo | navbar-collapse - Indica que se trata do conteúdo de uma navbar | id do data-target -->
+            <ul class="navbar-nav ml-auto">     <!-- navbar-nav - Navegação da Navbar -->
+                <li class="nav-item">   <!-- nav-item - Define um item de navegação -->
+                    <a href="" class="nav-link">Home</a>    <!-- nav-link - Define um link de navegação -->
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Serviços</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <h2>Barra de navegação com formulário</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Chalé Hotel</a>  
+        
+        <!-- Menu Hamburguer-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target2">    <!-- navbar-toggler - Menu hamburguer | data-toggle="collapse" - Identifica que ao botão ser precionado ele abrirá a navegação | data-target="#nav-target" - Define o que abrir (nesse caso abrirá o elemento(item) com o id="nav-target") -->
+            <span class="navbar-toggler-icon"></span>   <!-- Icone do menu hamburguer -->
+        </button>
+
+        <!-- Navegação -->
+        <div class="collapse navbar-collapse" id="nav-target2">  <!-- collapse - Esconde(oculta/recolhe) o conteúdo | navbar-collapse - Indica que se trata do conteúdo de uma navbar | id do data-target -->
+            <ul class="navbar-nav ml-auto">     <!-- navbar-nav - Navegação da Navbar -->
+                <li class="nav-item">   <!-- nav-item - Define um item de navegação -->
+                    <a href="" class="nav-link">Home</a>    <!-- nav-link - Define um link de navegação -->
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Serviços</a>
+                </li>
+            </ul>
+
+            <!-- Formulário -->
+            <form action="" class="form-inline">    <!-- form-inline - Indica que é um formulário inline(uma linha) -->
+                <input type="text" class="form-control mr-2" placeholder="pesquisar...">     <!-- form-control -  -->
+                <button class="btn btn-outline-success">ok</button>
+            </form>
+        </div>
+    </nav>
+
+    
+    <h2>Barra de navegação com menu dropdown</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Chalé Hotel</a>  
+        
+        <!-- Menu Hamburguer-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target2">    <!-- navbar-toggler - Menu hamburguer | data-toggle="collapse" - Identifica que ao botão ser precionado ele abrirá a navegação | data-target="#nav-target" - Define o que abrir (nesse caso abrirá o elemento(item) com o id="nav-target") -->
+            <span class="navbar-toggler-icon"></span>   <!-- Icone do menu hamburguer -->
+        </button>
+
+        <!-- Navegação -->
+        <div class="collapse navbar-collapse" id="nav-target2">  <!-- collapse - Esconde(oculta/recolhe) o conteúdo | navbar-collapse - Indica que se trata do conteúdo de uma navbar | id do data-target -->
+            <ul class="navbar-nav ml-auto">     <!-- navbar-nav - Navegação da Navbar -->
+                <li class="nav-item">   <!-- nav-item - Define um item de navegação -->
+                    <a href="" class="nav-link">Home</a>    <!-- nav-link - Define um link de navegação -->
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item dropdown">   <!-- dropdown - Ao clicar no botão aparecerá um menu de opções -->
+                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>     <!-- dropdown-toggle - Aparecerá uma seta para indicar um dropdown | data-toggle - Cria o menu dropdown -->
+
+                    <div class="dropdown-menu">     <!-- dropdown-menu - Faz a associação com o botão --> 
+                        <a href="" class="dropdown-item">Serviço 1</a>    <!--dropdown-item - Informa que esse é um item do menu -->
+                        <a href="" class="dropdown-item">Serviço 2</a>
+                        <a href="" class="dropdown-item">Serviço 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <!--Cores
+    opções: bg-primary, bg-secondary, bg-success, bg-info,
+    bg-warning, bg-danger, bg-light, bg-dark
+    -->
+    <h2>Cores</h2>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">    <!-- navbar - Estrutura de barra de navegação | navbar-expand-sm - Especifica o tipo de dispositivo | navbar-dark - Define a cor da navbar -->
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Chalé Hotel</a>    <!-- navbar-brand - Define o logo da navbar -->
+
+        <!-- Navegação -->
+        <ul class="navbar-nav ml-auto">     <!-- navbar-nav - Navegação da Navbar -->
+            <li class="nav-item">   <!-- nav-item - Define um item de navegação -->
+                <a href="" class="nav-link">Home</a>    <!-- nav-link - Define um link de navegação -->
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Serviços</a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-info">    <!-- navbar - Estrutura de barra de navegação | navbar-expand-sm - Especifica o tipo de dispositivo | navbar-dark - Define a cor da navbar -->
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Chalé Hotel</a>    <!-- navbar-brand - Define o logo da navbar -->
+
+        <!-- Navegação -->
+        <ul class="navbar-nav ml-auto">     <!-- navbar-nav - Navegação da Navbar -->
+            <li class="nav-item">   <!-- nav-item - Define um item de navegação -->
+                <a href="" class="nav-link">Home</a>    <!-- nav-link - Define um link de navegação -->
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Serviços</a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger">    <!-- navbar - Estrutura de barra de navegação | navbar-expand-sm - Especifica o tipo de dispositivo | navbar-dark - Define a cor da navbar -->
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Chalé Hotel</a>    <!-- navbar-brand - Define o logo da navbar -->
+
+        <!-- Navegação -->
+        <ul class="navbar-nav ml-auto">     <!-- navbar-nav - Navegação da Navbar -->
+            <li class="nav-item">   <!-- nav-item - Define um item de navegação -->
+                <a href="" class="nav-link">Home</a>    <!-- nav-link - Define um link de navegação -->
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Serviços</a>
+            </li>
+        </ul>
+    </nav>
+    
+
+    <!--Alinhamentos
+    opções: fixed-top, fixed-bottom, sticky
+    -->
+    <h2>Alinhamentos</h2>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-success">    <!-- navbar - Estrutura de barra de navegação | navbar-expand-sm - Especifica o tipo de dispositivo | navbar-dark - Define a cor da navbar -->
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Chalé Hotel</a>    <!-- navbar-brand - Define o logo da navbar -->
+
+        <!-- Navegação -->
+        <ul class="navbar-nav ml-auto">     <!-- navbar-nav - Navegação da Navbar -->
+            <li class="nav-item">   <!-- nav-item - Define um item de navegação -->
+                <a href="" class="nav-link">Home</a>    <!-- nav-link - Define um link de navegação -->
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Serviços</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+    
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../../js/bootstrap.min.js"></script>
+    
+</body>
+</html>
