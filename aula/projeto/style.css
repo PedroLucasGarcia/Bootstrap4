@@ -1,0 +1,141 @@
+/*formatações gerais*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f8f4f3;
+}
+
+/*header*/
+#cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f8f4f3;
+    width: 100vw;
+    border-bottom: 1px solid #1f1f2b;
+}
+#cabecalho a {
+    color: #1f1f2b;
+}
+#cabecalho a:hover {
+    color: #f87171;
+}
+
+/*main*/
+#apresentacao {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    padding-top: 10vh;
+    border-bottom: 1px solid #1f1f2b;
+}
+#apresentacao h1{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+#apresentacao p{
+    text-align: center;
+}
+
+#caixas {
+    background-color: #1f1f2b;
+    width: 100%;
+    line-height: 4rem;
+}
+#caixas p {
+    line-height: normal;
+}
+.html, .css, .javascript, .php, .bootstrap {
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 44.4vw;
+    border-radius: 15px;
+    text-align: center;
+    height: 40vh;
+}
+.html {
+    background-color: #e2fff3;
+    margin: 10vh 5vh 5vh 5vh;
+}
+.css {
+    background-color: #f5b5c3;
+    margin: 10vh 5vh 5vh 5vh;
+}
+.javascript {
+    background-color: #f8f7c1;
+    margin: 0 5vh 5vh 5vh;
+}
+.php {
+    background-color: #b3cbfd;
+    margin: 0 5vh 5vh 5vh;
+}
+.bootstrap {
+    background-color: #ffbdfc;
+    margin: 0 5vh 10vh 5vh;
+}
+
+/*Extra small devices (portrait phones, menor que 576px)*/
+@media screen and (max-width: 575.98px) {
+    #apresentacao {
+        height: 100vw;
+    }
+    #apresentacao h1 {
+        font-size: 1.5rem;
+    }
+    #apresentacao p {
+        font-size: 1rem;
+    }
+    .html, .css, .javascript, .php, .bootstrap {
+        width: 80vw;
+        height: 30vh;
+    }
+    .css {
+        margin: 0 5vh 5vh 5vh;
+    }
+}
+
+/*Small devices (landscape phones, de 576px até 767.98px)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+   
+}
+
+/*Medium devices (tablets, de 768px até 991.98px)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #apresentacao {
+        height: 70vw;
+    }
+    .html, .css, .javascript, .php, .bootstrap {
+        width: 86vw;
+        height: 26vh;
+    }
+    .css {
+        margin: 0 5vh 5vh 5vh;
+    }
+}
+
+/*Large devices (desktops, de 992px até 1199.98px)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #apresentacao {
+        height: 60vw;
+    }
+    .html, .css, .javascript, .php, .bootstrap {
+        width: 86vw;
+        height: 40vh;
+    }
+    .css {
+        margin: 0 5vh 5vh 5vh;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px  e maiores)*/
+@media (min-width: 1200px) {
+    .html, .css, .javascript, .php, .bootstrap {
+        width: 43.5vw;
+        height: 40vh;
+    }
+}
