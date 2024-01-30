@@ -17,6 +17,10 @@ a, a:hover {
 #cabecalho {
     border-bottom: 1px solid black;
     width: 100%;
+    background-color: #f8f4f3;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 #cabecalho a {
     color: #1f1f2b;
@@ -27,6 +31,7 @@ a, a:hover {
 
 /*APRESENTAÇÃO*/
 #apresentacao {
+    padding-top: 10vh;
     display: flex;
     align-items: center;
     height: 40vh;
@@ -48,7 +53,7 @@ a, a:hover {
     display: flex;
     align-items: center;
     height: 40vh;
-    width: 42.5%;
+    width: 40%;
     text-align: center;
     float: left;
     margin: 0 5%;
@@ -57,23 +62,18 @@ a, a:hover {
 }
 .html {
     background-color: #e2fff3;
-    margin-top: 5%;
 }
 .css {
     background-color: #f5b5c3;
-    margin-top: 5%;
-    margin-left: 0;
 }
 .javascript {
     background-color: #f8f7c1;
 }
 .php {
     background-color: #b3cbfd;
-    margin-left: 0;
 }
 .bootstrap {
     background-color: #ffbdfc;
-    margin-bottom: 5%;
 }
 #caixas p {
     line-height: normal;
@@ -82,37 +82,110 @@ a, a:hover {
 }
 .btn {
     border-radius: 25px;
-    width: 70%;
+    width: 60%;
 }
 
 
-@media screen and (max-width: 991.98px) {
+/*Extra small devices (portrait phones, menor que 576px)*/
+@media screen and (max-width: 575.98px) {
+    #apresentacao h1 {
+        font-size: 2rem;
+    }
+    #apresentacao p {
+        font-size: 1rem;
+    }
     #apresentacao {
-        height: 80vh;
+        height: 50vh; 
+    }
+    .html, .css, .javascript, .php, .bootstrap {
+        height: 40vh;
+        width: 90vw;
+    }
+    .html {
+        margin-top: 5%;
+    }
+    .bootstrap {
+        margin-bottom: 5%;
+    }
+    .btn {
+        width: 90%;
+    }
+}
+
+/*Small devices (landscape phones, de 576px até 767.98px)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #apresentacao {
+        height: 86vh; 
+    }
+    .html, .css, .javascript, .php, .bootstrap {
+        height: 70vh;
+        width: 90vw;
+    }
+    .html {
+        margin-top: 5%;
+    }
+    .bootstrap {
+        margin-bottom: 5%;
+    }
+    .btn {
+        width: 62%;
+    }
+}
+
+/*Medium devices (tablets, de 768px até 991.98px)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #apresentacao {
+        height: 60vh;
     }
     .html, .css, .javascript, .php, .bootstrap {
         width: 90%;  
-        margin: 0 5%; 
-        margin-top: 2.5%;
+        height: 60vh;
     }
     .html {
-        margin-top: 10%;
+        margin-top: 5%;
     }
     .bootstrap {
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
-}
-
-@media (max-width: 575.98px) {
     .btn {
-        width: 80%;
+        width: 52%;
     }
 }
 
-
+/*Large devices (desktops, de 992px até 1199.98px)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .btn {
-        width: 80%;
+    #apresentacao {
+        height: 60vh;
     }
-    
+    .html, .css, .javascript, .php, .bootstrap {
+        width: 40%;  
+        margin-top: 2.5%;
+        height: 40vh;
+    }
+    .html, .css {
+        margin-top: 5%;
+    }
+    .bootstrap {
+        margin-bottom: 5%;
+    }
+    .btn {
+        width: 70%;
+    }
 }
+
+/*Extra large devices (large desktops, 1200px  e maiores)*/
+@media (min-width: 1200px) {
+    #apresentacao {
+        height: 40vh;
+    }
+    .html, .css, .javascript, .php, .bootstrap {
+        margin-top: 2.5%;
+    }
+    .html, .css {
+        margin-top: 5%;
+    }
+    .bootstrap {
+        margin-bottom: 5%;
+    }
+}
+ 
